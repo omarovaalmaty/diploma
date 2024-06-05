@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форматирование DOCX-файла согласно ГОСТ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #0170ba;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .info-section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            margin: 20px 0;
+        }
+        .container {
+            padding-top: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Автоматизация форматирования DOCX-документов</h1>
+    </div>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>О приложении</h2>
+            <p>Это веб-приложение поможет вам форматировать документы DOCX в соответствии с ГОСТ 7.32-2017. Просто загрузите файл, и приложение автоматически применит необходимые настройки форматирования.</p>
+            <h3>Осуществляемое форматирование:</h3>
+            <ul>
+                <li>Форматирование реферата: объем работы, количество иллюстраций и таблиц, перечень ключевых слов.</li>
+                <li>Выравнивание текста, настройка шрифта и межстрочного интервала.</li>
+                <li>Оформление списков литературы согласно стандартам.</li>
+            </ul>
+        </div>
+
+        <form action="/" method="post" enctype="multipart/form-data" class="info-section">
+            <h2>Загрузите ваш документ</h2>
+            <div class="form-group">
+                <input type="file" class="form-control-file" name="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Загрузить и отформатировать</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
